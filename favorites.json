@@ -1,0 +1,961 @@
+{
+  "categories": [
+    "默认分类",
+    "常用节点",
+    "图像处理",
+    "文本处理"
+  ],
+  "favorites": [
+    {
+      "type": "LayerUtility: ImageBlendAdvance",
+      "title": "混合(高级)",
+      "description": "LayerUtility: ImageBlendAdvance",
+      "properties": {
+        "Node name for S&R": "LayerUtility: ImageBlendAdvance"
+      },
+      "size": {
+        "0": 270,
+        "1": 338
+      },
+      "widgets": [
+        {
+          "name": "invert_mask",
+          "type": "toggle",
+          "value": true
+        },
+        {
+          "name": "blend_mode",
+          "type": "combo",
+          "value": "normal"
+        },
+        {
+          "name": "opacity",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "x_percent",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "name": "y_percent",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "name": "mirror",
+          "type": "combo",
+          "value": "None"
+        },
+        {
+          "name": "scale",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "rotate",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "transform_method",
+          "type": "combo",
+          "value": "lanczos"
+        },
+        {
+          "name": "anti_aliasing",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "id": "1764463659459",
+      "category": "默认分类",
+      "created_at": 1764463659.4598122
+    },
+    {
+      "type": "ImageToMask",
+      "title": "图像到遮罩",
+      "description": "ImageToMask",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.75",
+        "Node name for S&R": "ImageToMask"
+      },
+      "size": {
+        "0": 270,
+        "1": 58
+      },
+      "widgets": [
+        {
+          "name": "channel",
+          "type": "combo",
+          "value": "red"
+        }
+      ],
+      "id": "1764463693883",
+      "category": "默认分类",
+      "created_at": 1764463693.8836567
+    },
+    {
+      "type": "Colored Image (mtb)",
+      "title": "纯色图像",
+      "description": "Colored Image (mtb)",
+      "properties": {
+        "Node name for S&R": "Colored Image (mtb)"
+      },
+      "size": {
+        "0": 210,
+        "1": 174
+      },
+      "widgets": [
+        {
+          "name": "color",
+          "type": "color",
+          "value": "#000000"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "value": 512
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "value": 512
+        },
+        {
+          "name": "invert",
+          "type": "toggle",
+          "value": false
+        },
+        {
+          "name": "mask_opacity",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "id": "1764463991059",
+      "category": "默认分类",
+      "created_at": 1764463991.0596504
+    },
+    {
+      "type": "LayerColor: Brightness & Contrast",
+      "title": "亮度/对比度",
+      "description": "LayerColor: Brightness & Contrast",
+      "properties": {
+        "Node name for S&R": "LayerColor: Brightness & Contrast"
+      },
+      "size": {
+        "0": 270,
+        "1": 106
+      },
+      "widgets": [
+        {
+          "name": "brightness",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "contrast",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "saturation",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "id": "1764464143442",
+      "category": "默认分类",
+      "created_at": 1764464143.4426563
+    },
+    {
+      "type": "GrowMaskWithBlur",
+      "title": "遮罩模糊生长",
+      "description": "GrowMaskWithBlur",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.1.9",
+        "Node name for S&R": "GrowMaskWithBlur"
+      },
+      "size": {
+        "0": 292.748046875,
+        "1": 246
+      },
+      "widgets": [
+        {
+          "name": "expand",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "incremental_expandrate",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "tapered_corners",
+          "type": "toggle",
+          "value": true
+        },
+        {
+          "name": "flip_input",
+          "type": "toggle",
+          "value": false
+        },
+        {
+          "name": "blur_radius",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "lerp_alpha",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "decay_factor",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "fill_holes",
+          "type": "toggle",
+          "value": false
+        }
+      ],
+      "id": "1764464405818",
+      "category": "默认分类",
+      "created_at": 1764464405.8180134
+    },
+    {
+      "type": "MaskPreview+",
+      "title": "遮罩预览",
+      "description": "MaskPreview+",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "MaskPreview+"
+      },
+      "size": {
+        "0": 140,
+        "1": 26
+      },
+      "widgets": [],
+      "id": "1764574887728",
+      "category": "默认分类",
+      "created_at": 1764574887.7287443
+    },
+    {
+      "type": "EG_ZZ_TMTX",
+      "title": "2🐕透明图像裁剪",
+      "description": "EG_ZZ_TMTX",
+      "properties": {
+        "aux_id": "11dogzi/Comfyui-ergouzi-DGNJD",
+        "ver": "b0ff18fc6376013d248dc01c91e19c11522a86be",
+        "Node name for S&R": "EG_ZZ_TMTX"
+      },
+      "size": {
+        "0": 270,
+        "1": 78
+      },
+      "widgets": [
+        {
+          "name": "遮罩反转",
+          "type": "combo",
+          "value": "no"
+        }
+      ],
+      "id": "1764631742535",
+      "category": "默认分类",
+      "created_at": 1764631742.5357914
+    },
+    {
+      "type": "MaskToImage",
+      "title": "遮罩到图像",
+      "description": "MaskToImage",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.75",
+        "Node name for S&R": "MaskToImage"
+      },
+      "size": {
+        "0": 140,
+        "1": 26
+      },
+      "widgets": [],
+      "id": "1764631754026",
+      "category": "默认分类",
+      "created_at": 1764631754.026741
+    },
+    {
+      "type": "Create Grid Image from Batch",
+      "title": "从批次图像创建图表",
+      "description": "Create Grid Image from Batch",
+      "properties": {
+        "cnr_id": "pr-was-node-suite-comfyui-47064894",
+        "ver": "ea935d1044ae5a26efa54ebeb18fe9020af49a45",
+        "Node name for S&R": "Create Grid Image from Batch"
+      },
+      "size": {
+        "0": 272.7265625,
+        "1": 178
+      },
+      "widgets": [
+        {
+          "name": "border_width",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "number_of_columns",
+          "type": "number",
+          "value": 6
+        },
+        {
+          "name": "max_cell_size",
+          "type": "number",
+          "value": 256
+        },
+        {
+          "name": "border_red",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "border_green",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "border_blue",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "id": "1765012598224",
+      "category": "默认分类",
+      "created_at": 1765012598.224558
+    },
+    {
+      "isGroup": true,
+      "title": "获取尺寸",
+      "description": "包含 2 个已连接的节点",
+      "nodes": [
+        {
+          "id": 8,
+          "type": "ImageResize+",
+          "title": "图像缩放",
+          "description": "ImageResize+",
+          "properties": {
+            "cnr_id": "comfyui_essentials",
+            "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+            "Node name for S&R": "ImageResize+"
+          },
+          "size": {
+            "0": 270,
+            "1": 218
+          },
+          "pos": [
+            8640.809173380374,
+            8258.422988564878
+          ],
+          "widgets": [
+            {
+              "name": "width",
+              "type": "number",
+              "value": 512
+            },
+            {
+              "name": "height",
+              "type": "number",
+              "value": 512
+            },
+            {
+              "name": "interpolation",
+              "type": "combo",
+              "value": "nearest"
+            },
+            {
+              "name": "method",
+              "type": "combo",
+              "value": "stretch"
+            },
+            {
+              "name": "condition",
+              "type": "combo",
+              "value": "always"
+            },
+            {
+              "name": "multiple_of",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "relativePos": [
+            289.3963657675977,
+            0
+          ]
+        },
+        {
+          "id": 10,
+          "type": "easy imageSize",
+          "title": "图像尺寸",
+          "description": "easy imageSize",
+          "properties": {
+            "cnr_id": "comfyui-easy-use",
+            "ver": "b6bb4a3055adc718ec98befee233f8b05c778465",
+            "Node name for S&R": "easy imageSize"
+          },
+          "size": {
+            "0": 140,
+            "1": 96
+          },
+          "pos": [
+            8351.412807612776,
+            8527.29980761546
+          ],
+          "widgets": [
+            {
+              "name": "info",
+              "type": "customtext",
+              "value": ""
+            }
+          ],
+          "relativePos": [
+            0,
+            268.8768190505816
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from_node_index": 1,
+          "from_slot": 0,
+          "to_node_index": 0,
+          "to_slot": 1
+        },
+        {
+          "from_node_index": 1,
+          "from_slot": 1,
+          "to_node_index": 0,
+          "to_slot": 2
+        }
+      ],
+      "nodeCount": 2,
+      "id": "1765172784409",
+      "category": "默认分类",
+      "created_at": 1765172784.4095252
+    },
+    {
+      "isGroup": true,
+      "title": "纯色",
+      "description": "包含 4 个已连接的节点",
+      "nodes": [
+        {
+          "id": 12,
+          "type": "easy imageSize",
+          "title": "图像尺寸",
+          "description": "easy imageSize",
+          "properties": {
+            "cnr_id": "comfyui-easy-use",
+            "ver": "b6bb4a3055adc718ec98befee233f8b05c778465",
+            "Node name for S&R": "easy imageSize"
+          },
+          "size": {
+            "0": 210,
+            "1": 108
+          },
+          "pos": [
+            8561.31727194944,
+            8471.420319070578
+          ],
+          "widgets": [
+            {
+              "name": "info",
+              "type": "customtext",
+              "value": "Width: 787 , Height: 1151"
+            }
+          ],
+          "relativePos": [
+            0,
+            196.14899454035913
+          ]
+        },
+        {
+          "id": 15,
+          "type": "LayerUtility: ImageBlendAdvance",
+          "title": "混合(高级)",
+          "description": "LayerUtility: ImageBlendAdvance",
+          "properties": {
+            "Node name for S&R": "LayerUtility: ImageBlendAdvance"
+          },
+          "size": {
+            "0": 270,
+            "1": 338
+          },
+          "pos": [
+            9887.528145759145,
+            8275.271324530218
+          ],
+          "widgets": [
+            {
+              "name": "invert_mask",
+              "type": "toggle",
+              "value": true
+            },
+            {
+              "name": "blend_mode",
+              "type": "combo",
+              "value": "normal"
+            },
+            {
+              "name": "opacity",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "name": "x_percent",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "y_percent",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "mirror",
+              "type": "combo",
+              "value": "None"
+            },
+            {
+              "name": "scale",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "aspect_ratio",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "rotate",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "transform_method",
+              "type": "combo",
+              "value": "lanczos"
+            },
+            {
+              "name": "anti_aliasing",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "relativePos": [
+            1326.210873809705,
+            0
+          ]
+        },
+        {
+          "id": 16,
+          "type": "Colored Image (mtb)",
+          "title": "纯色图像",
+          "description": "Colored Image (mtb)",
+          "properties": {
+            "Node name for S&R": "Colored Image (mtb)"
+          },
+          "size": {
+            "0": 210,
+            "1": 174
+          },
+          "pos": [
+            9610.038171794722,
+            8488.555030517553
+          ],
+          "widgets": [
+            {
+              "name": "color",
+              "type": "color",
+              "value": "#000000"
+            },
+            {
+              "name": "width",
+              "type": "number",
+              "value": 512
+            },
+            {
+              "name": "height",
+              "type": "number",
+              "value": 512
+            },
+            {
+              "name": "invert",
+              "type": "toggle",
+              "value": false
+            },
+            {
+              "name": "mask_opacity",
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "relativePos": [
+            1048.7208998452825,
+            213.28370598733454
+          ]
+        },
+        {
+          "id": 17,
+          "type": "Color Input (mtb)",
+          "title": "Color Input (mtb)",
+          "description": "Color Input (mtb) 节点",
+          "properties": {
+            "Node name for S&R": "Color Input (mtb)"
+          },
+          "size": {
+            "0": 210,
+            "1": 70
+          },
+          "pos": [
+            9368.611553257475,
+            8729.045886967455
+          ],
+          "widgets": [
+            {
+              "name": "color",
+              "type": "COLOR",
+              "value": "#ffffff"
+            }
+          ],
+          "relativePos": [
+            807.2942813080354,
+            453.77456243723645
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from_node_index": 0,
+          "from_slot": 0,
+          "to_node_index": 2,
+          "to_slot": 3
+        },
+        {
+          "from_node_index": 0,
+          "from_slot": 1,
+          "to_node_index": 2,
+          "to_slot": 4
+        },
+        {
+          "from_node_index": 2,
+          "from_slot": 0,
+          "to_node_index": 1,
+          "to_slot": 0
+        },
+        {
+          "from_node_index": 3,
+          "from_slot": 0,
+          "to_node_index": 2,
+          "to_slot": 2
+        }
+      ],
+      "nodeCount": 4,
+      "id": "1765173620856",
+      "category": "默认分类",
+      "created_at": 1765173620.8566167
+    },
+    {
+      "isGroup": true,
+      "title": "节点组 (3个节点)",
+      "description": "包含 3 个已连接的节点",
+      "nodes": [
+        {
+          "id": 28,
+          "type": "LayerUtility: ImageRemoveAlpha",
+          "title": "移除Alpha",
+          "description": "LayerUtility: ImageRemoveAlpha",
+          "properties": {
+            "Node name for S&R": "LayerUtility: ImageRemoveAlpha"
+          },
+          "size": {
+            "0": 270,
+            "1": 102
+          },
+          "pos": [
+            1232.5214908300452,
+            340.8142366399918
+          ],
+          "widgets": [
+            {
+              "name": "fill_background",
+              "type": "toggle",
+              "value": false
+            },
+            {
+              "name": "background_color",
+              "type": "text",
+              "value": "#000000"
+            }
+          ],
+          "relativePos": [
+            334.79281944262095,
+            0
+          ]
+        },
+        {
+          "id": 29,
+          "type": "LoadImage",
+          "title": "加载图像",
+          "description": "LoadImage",
+          "properties": {
+            "cnr_id": "comfy-core",
+            "ver": "0.4.0",
+            "Node name for S&R": "LoadImage"
+          },
+          "size": {
+            "0": 270,
+            "1": 314.00000000000006
+          },
+          "pos": [
+            897.7286713874242,
+            429.26386797745283
+          ],
+          "widgets": [
+            {
+              "name": "image",
+              "type": "combo",
+              "value": "-2ML1hsGD-gLATi1mVSCCg.jpg"
+            },
+            {
+              "name": "upload",
+              "type": "button",
+              "value": "image"
+            },
+            {
+              "name": "$$canvas-image-preview",
+              "type": "custom",
+              "value": ""
+            }
+          ],
+          "relativePos": [
+            0,
+            88.44963133746103
+          ]
+        },
+        {
+          "id": 30,
+          "type": "PreviewImage",
+          "title": "预览图像",
+          "description": "PreviewImage",
+          "properties": {
+            "cnr_id": "comfy-core",
+            "ver": "0.4.0",
+            "Node name for S&R": "PreviewImage"
+          },
+          "size": {
+            "0": 140,
+            "1": 26
+          },
+          "pos": [
+            1605.7585587644319,
+            390.4955173758171
+          ],
+          "widgets": [],
+          "relativePos": [
+            708.0298873770076,
+            49.68128073582528
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from_node_index": 0,
+          "from_slot": 0,
+          "to_node_index": 2,
+          "to_slot": 0
+        },
+        {
+          "from_node_index": 1,
+          "from_slot": 0,
+          "to_node_index": 0,
+          "to_slot": 0
+        }
+      ],
+      "nodeCount": 3,
+      "id": "1765454029946",
+      "category": "默认分类",
+      "created_at": 1765454029.9469674
+    },
+    {
+      "isGroup": true,
+      "title": "反推",
+      "description": "包含 3 个已连接的节点",
+      "nodes": [
+        {
+          "id": 185,
+          "type": "LoadImage",
+          "title": "加载图像",
+          "description": "LoadImage",
+          "properties": {
+            "cnr_id": "comfy-core",
+            "ver": "0.9.2",
+            "Node name for S&R": "LoadImage"
+          },
+          "size": {
+            "0": 270,
+            "1": 314
+          },
+          "pos": [
+            -5615.5758460576135,
+            2270.680772223263
+          ],
+          "widgets": [
+            {
+              "name": "image",
+              "type": "combo",
+              "value": "pasted/image (1813).png"
+            },
+            {
+              "name": "upload",
+              "type": "button",
+              "value": "image"
+            },
+            {
+              "name": "$$canvas-image-preview",
+              "type": "custom",
+              "value": ""
+            }
+          ],
+          "relativePos": [
+            0,
+            0.8944155433819105
+          ]
+        },
+        {
+          "id": 186,
+          "type": "QwenVisionNode",
+          "title": "Qwen-Vision 图生文节点",
+          "description": "QwenVisionNode",
+          "properties": {
+            "aux_id": "111496583yzy/comfyui-modelscope-qwen-image",
+            "ver": "a32688f0b66d3140146c004691677d242102df00",
+            "Node name for S&R": "QwenVisionNode"
+          },
+          "size": {
+            "0": 368.80536676003544,
+            "1": 355.4957361825244
+          },
+          "pos": [
+            -5302.370158896779,
+            2276.857244042566
+          ],
+          "widgets": [
+            {
+              "name": "prompt",
+              "type": "customtext",
+              "value": "描述这张图片"
+            },
+            {
+              "name": "api_token",
+              "type": "text",
+              "value": "ms-8d7847c0-c0eb-4036-8869-b57f99c3ad47"
+            },
+            {
+              "name": "system_prompt",
+              "type": "customtext",
+              "value": "You are a helpful assistant."
+            },
+            {
+              "name": "model",
+              "type": "text",
+              "value": "Qwen/Qwen3-VL-235B-A22B-Instruct"
+            },
+            {
+              "name": "max_tokens",
+              "type": "number",
+              "value": 1000
+            },
+            {
+              "name": "temperature",
+              "type": "number",
+              "value": 0.7
+            },
+            {
+              "name": "seed",
+              "type": "number",
+              "value": 1883663638
+            },
+            {
+              "name": "control_after_generate",
+              "type": "combo",
+              "value": "randomize"
+            }
+          ],
+          "relativePos": [
+            313.2056871608347,
+            7.070887362684971
+          ]
+        },
+        {
+          "id": 187,
+          "type": "ShowText|pysssss",
+          "title": "展示文本",
+          "description": "ShowText|pysssss",
+          "properties": {
+            "cnr_id": "comfyui-custom-scripts",
+            "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+            "Node name for S&R": "ShowText|pysssss"
+          },
+          "size": {
+            "0": 414.62246426982983,
+            "1": 477.8972959881394
+          },
+          "pos": [
+            -4820.1500475140065,
+            2269.786356679881
+          ],
+          "widgets": [
+            {
+              "name": "text_0",
+              "type": "customtext",
+              "value": "这张图片描绘了一位充满奇幻与神圣感的女性角色，整体风格精致唯美，带有强烈的仙气或神祇气质。\n\n以下是图片的具体描述：\n\n*   **人物主体**：画面中心是一位面容清秀、五官精致的年轻女性。她拥有白皙无瑕的皮肤，一双清澈明亮的蓝色眼眸，眼神平静而深邃，流露出一种超凡脱俗的宁静感。她的嘴唇呈自然的淡粉色，表情沉静。\n\n*   **发型与头饰**：她拥有一头柔顺的银白色长发，部分头发在头顶盘起，形成优雅的发髻。最引人注目的是她头上佩戴的极其华丽、繁复的头冠。这个头冠由无数精细的、如同冰晶或水晶般剔透的结构组成，造型如同盛开的花朵、燃烧的火焰或飘逸的羽翼，散发着柔和的光芒，仿佛是由光或魔法凝结而成。头冠中央和额前还点缀着小巧的、类似水滴或宝石的装饰物，增添了细节的精致感。\n\n*   **服饰与背景**：虽然只能看到肩部以上，但可以看到她身着同样带有光泽和纹理的服饰，肩部有类似花瓣或流苏的透明装饰，与头冠风格统一。背景是深色的，但在人物周围环绕着一圈明亮的金色光环，如同圣光或能量场，进一步强化了她的神圣与高贵气质。\n\n*   **整体氛围**：整张图片色调以冷色（银白、浅蓝）为主，辅以温暖的金色光晕，营造出一种既冰冷纯净又神圣温暖的矛盾美感。光影效果非常出色，突出了材质的通透感和人物的立体感，充满了幻想艺术的风格，让人联想到冰雪女神、精灵女王或某种高等存在的形象。\n\n总而言之，这是一幅极具视觉冲击力和艺术美感的数字绘画作品，成功塑造了一位美丽、神秘且充满力量感的幻想女性角色。"
+            }
+          ],
+          "relativePos": [
+            795.425798543607,
+            0
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from_node_index": 0,
+          "from_slot": 0,
+          "to_node_index": 1,
+          "to_slot": 0
+        },
+        {
+          "from_node_index": 1,
+          "from_slot": 0,
+          "to_node_index": 2,
+          "to_slot": 0
+        }
+      ],
+      "nodeCount": 3,
+      "id": "1769564873046",
+      "category": "默认分类",
+      "created_at": 1769564873.0468276
+    }
+  ]
+}
